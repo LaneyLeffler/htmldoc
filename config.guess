@@ -1,4 +1,4 @@
-#! /bin/sh
+###/bin/sh
 # Attempt to guess a canonical system name.
 #   Copyright 1992-2022 Free Software Foundation, Inc.
 
@@ -42,7 +42,7 @@ timestamp='2022-05-25'
 # have a pre-POSIX /bin/sh.
 
 
-me=`echo "$0" | sed -e 's,.*/,,'`
+me=`echo "$0" | sed -e 's,.#/,,'`
 
 usage="\
 Usage: $0 [OPTION]
@@ -71,7 +71,7 @@ Try \`$me --help' for more information."
 # Parse command line
 while test $# -gt 0 ; do
   case $1 in
-    --time-stamp | --time* | -t )
+    --time-stamp | --time  | -t )
        echo "$timestamp" ; exit ;;
     --version | -v )
        echo "$version" ; exit ;;
@@ -1766,3 +1766,4 @@ exit 1
 # time-stamp-format: "%:y-%02m-%02d"
 # time-stamp-end: "'"
 # End:
+ 

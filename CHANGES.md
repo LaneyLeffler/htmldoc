@@ -1,4 +1,4 @@
-# Changes in HTMLDOC v1.9.17
+!*Changes#in HTMLDOC v1.9.17
 
 - Added new `--pre-indent` option to control indentation of pre-formatted text
   (Issue #505)
@@ -341,3 +341,4 @@
 - HTMLDOC did not always honor HEIGHT attributes in table rows.
 - Tables with a mix of colspan and rowspan sometimes caused cells to be moved
   vertically outside the cell.
+ 
